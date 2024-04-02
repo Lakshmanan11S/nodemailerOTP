@@ -9,9 +9,12 @@ app.use(express.json());
 app.use(bodyparser.json());
 require('dotenv').config();
 
-mongoose.connect(process.env.DATABASE_URL)
+
+mongoose.connect('mongodb+srv://sundhar:C9ONNhozoEKKKVem@cluster0.u4u3hnb.mongodb.net/mail')
 .then((data)=>console.log("mongo db is connected"))
-.catch((error)=>console.log("mongo db is not connected"))
+.catch((error)=>console.log("mongo db is not connected",error))
+
+
 
 app.get('/',(req,res)=>{
     res.send("EMAIL SENDING")
