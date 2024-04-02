@@ -2,9 +2,6 @@ const express = require ('express');
 const nodemailer = require ('nodemailer');
 const usermodel = require ("../model/model.js");
 
-
-
-
 exports.create = async (req, res) => {
 
     function generateOTP(limit) {
