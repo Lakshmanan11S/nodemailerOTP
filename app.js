@@ -11,7 +11,7 @@ require('dotenv').config();
 
 
 mongoose.connect('mongodb+srv://sundhar:C9ONNhozoEKKKVem@cluster0.u4u3hnb.mongodb.net/mail')
-.then((data)=>console.log("mongo db is connected"))
+.then((data)=>console.log("mongo db is connectedd"))
 .catch((error)=>console.log("mongo db is not connected",error))
 
 
